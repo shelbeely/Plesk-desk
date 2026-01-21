@@ -1,0 +1,41 @@
+{
+  "name": "plesk-desk",
+  "version": "1.0.0",
+  "description": "AI-first assistant for Plesk with CLI TUI",
+  "main": "dist/index.js",
+  "bin": {
+    "plesk-desk": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli/index.tsx",
+    "start": "node dist/cli/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "plesk",
+    "api",
+    "cli",
+    "assistant",
+    "devops"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "chalk": "^5.6.2",
+    "diff": "^8.0.3",
+    "ink": "^6.6.0",
+    "ink-spinner": "^5.0.0",
+    "ora": "^9.0.0",
+    "react": "^19.2.3",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.9",
+    "@types/react": "^19.2.9",
+    "@types/xml2js": "^0.4.14",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
