@@ -40,13 +40,29 @@ export PLESK_SECURE=true                  # Optional, default: true
 
 ## Usage
 
-### CLI Mode
+### Demo Mode (Without TUI)
+
+Run the demo to see the plan → diff → apply workflow in action:
+
+```bash
+npm run demo
+```
+
+This will demonstrate:
+- Plan generation for domain operations
+- Diff previews showing changes
+- Operation validation
+- Examples for SSL, PHP, and reverse proxy configuration
+
+### CLI Mode (Interactive TUI)
 
 ```bash
 npm run dev
 # or after building:
 npm start
 ```
+
+**Note**: The TUI mode requires proper Plesk credentials. The demo mode can run without a Plesk server.
 
 ### Programmatic Usage
 

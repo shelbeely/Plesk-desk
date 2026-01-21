@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "dev": "tsx src/cli/index.tsx",
+    "demo": "tsx src/demo.ts",
+    "dev": "NODE_OPTIONS='--loader tsx' tsx src/cli/index.tsx",
     "start": "node dist/cli/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
