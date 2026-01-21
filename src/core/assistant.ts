@@ -1,6 +1,5 @@
 import { OperationPlan, OperationDiff, OperationResult, Change } from '../types';
 import { PleskClient } from '../api/client';
-import * as diff from 'diff';
 
 export class AssistantEngine {
   private client: PleskClient;

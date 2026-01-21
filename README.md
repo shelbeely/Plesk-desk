@@ -36,6 +36,9 @@ export PLESK_API_KEY=your-api-key         # Or use username/password
 export PLESK_USERNAME=admin
 export PLESK_PASSWORD=your-password
 export PLESK_SECURE=true                  # Optional, default: true
+
+# Security: Only set to false for development with self-signed certificates
+# export PLESK_REJECT_UNAUTHORIZED=false
 ```
 
 ## Usage

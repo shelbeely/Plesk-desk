@@ -21,7 +21,7 @@ export class PleskRestClient {
         password: config.password,
       } : undefined,
       httpsAgent: new https.Agent({
-        rejectUnauthorized: false, // For self-signed certificates
+        rejectUnauthorized: config.rejectUnauthorized !== false,
       }),
     });
   }

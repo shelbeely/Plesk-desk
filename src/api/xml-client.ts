@@ -20,7 +20,7 @@ export class PleskXmlClient {
         'HTTP_AUTH_PASSWD': config.password || '',
       },
       httpsAgent: new https.Agent({
-        rejectUnauthorized: false,
+        rejectUnauthorized: config.rejectUnauthorized !== false,
       }),
     });
 

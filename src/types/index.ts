@@ -5,6 +5,7 @@ export interface PleskConfig {
   password?: string;
   apiKey?: string;
   secure?: boolean;
+  rejectUnauthorized?: boolean; // Set to false only for self-signed certificates in dev
 }
 
 export interface PleskDomain {
@@ -54,20 +55,20 @@ export interface PlanStep {
 }
 
 export interface OperationDiff {
-  before: any;
-  after: any;
+  before: Record<string, unknown> | null;
+  after: Record<string, unknown> | null;
   changes: Change[];
 }
 
 export interface Change {
   field: string;
-  oldValue: any;
-  newValue: any;
+  oldValue: unknown;
+  newValue: unknown;
 }
 
 export interface OperationResult {
   success: boolean;
   message: string;
-  rollbackData?: any;
+  rollbackData?: Record<string, unknown>;
   errors?: string[];
 }
